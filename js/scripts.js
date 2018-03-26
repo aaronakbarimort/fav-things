@@ -6,6 +6,9 @@ $(document).ready(function(){
     var favThree = $("input#favThree").val();
 
     var array = [favOne, favTwo, favThree];
+    var array2 = []
+    array2.push(array[0] , array[2]);
 
+    $("#output").append("<li>" + array2[0] + "</li>" + "<li>" + array2[1] + "</li>");
   });
 });
